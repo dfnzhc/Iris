@@ -9,6 +9,7 @@ find_package(benchmark CONFIG REQUIRED)
 
 # These examples use the standard separate compilation
 set(TEST_SOURCES
+        Base/LogTest.cpp
         BaseTest.cpp
         CommonTest.cpp
 )
