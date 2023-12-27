@@ -57,7 +57,7 @@ target_compile_definitions(${PROJECT_NAME}
         $<$<CXX_COMPILER_ID:Clang>:_MSC_EXTENSIONS> # enable MS extensions
         PRIVATE
         $<$<CONFIG:Debug>:_ITERATOR_DEBUG_LEVEL=0>
-        ${PROJECT_NAME}_DLL
+        ${PROJECT_NAME_UPPERCASE}_DLL
 )
 
 target_compile_options(${PROJECT_NAME}

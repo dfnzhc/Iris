@@ -10,14 +10,14 @@
 #include <gtest/gtest.h>
 #include <Iris/Base/TypeName.hpp>
 
-using namespace iris;
+using namespace Iris;
 
 class DummyClass
 {
     
 };
 
-TREE_TYPE_NAME(DummyClass)
+IRIS_TYPE_NAME(DummyClass)
 
 TEST(TreeBase, type_name)
 {

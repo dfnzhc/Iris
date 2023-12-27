@@ -7,5 +7,5 @@
 
 #include "Core.hpp"
 
-using namespace iris;
+using namespace Iris;
 

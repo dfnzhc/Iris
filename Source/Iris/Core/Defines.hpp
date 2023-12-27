@@ -30,8 +30,21 @@
 #    define IRIS_API IRIS_API_IMPORT
 #endif
 
-namespace iris
+#define IRIS_NODISCARD [[nodiscard]]
+#define IRIS_UNUSED [[maybe_unused]]
+
+namespace Iris
 {
+
+#ifdef _DEBUG
+#    define IRIS_IN_DEBUG
+constexpr auto kIsDebug = true;
+#endif
+
+#ifdef NDEBUG
+#    define IRIS_IN_RELEASE
+constexpr auto kIsRelease = true;
+#endif
 
 // -------------------------
 // 数字类型的别名
@@ -70,4 +83,4 @@ constexpr u32 kU32Max = UINT32_MAX;
 constexpr u64 kU64Max = UINT64_MAX;
 // @formatter:on
 
-} // namespace iris
+} // namespace Iris

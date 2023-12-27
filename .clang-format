@@ -73,6 +73,7 @@ SpacesInParentheses: false
 SpacesInSquareBrackets: false
 TabWidth: 4
 UseTab: Never
+SeparateDefinitionBlocks: Always
 
 SortIncludes: Never
 SortUsingDeclarations: Never

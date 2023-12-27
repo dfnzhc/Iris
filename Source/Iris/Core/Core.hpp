@@ -9,7 +9,7 @@
 
 #include "Defines.hpp"
 
-namespace iris
+namespace Iris
 {
 
 class IRIS_API ExtObj
@@ -22,4 +22,4 @@ private:
     int _val = 0;
 };
 
-} // namespace iris
+} // namespace Iris
